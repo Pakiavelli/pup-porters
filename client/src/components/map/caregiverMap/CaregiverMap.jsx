@@ -125,7 +125,7 @@ const handleConfirm = () => {
     }) : postedMarkers;
     console.log("rendering with");
     console.log(markersToRender);
-    
+
     return (
       <div>
         <div className={classes.outer}>
@@ -173,6 +173,7 @@ const handleConfirm = () => {
         <div className={classes.buttons}>
 
         {markerCoord &&
+        <React.Fragment>
           <Button
             variant="contained"
             color="primary"
@@ -186,6 +187,8 @@ const handleConfirm = () => {
           <Modal open={open} onClose={handleClose}>
           <Confirmation/>
         </Modal>
+        </React.Fragment>
+
         }
         </div>
       </div>
