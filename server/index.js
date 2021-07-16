@@ -9,7 +9,7 @@ const user = require('./controller/user.js');
 const maphelper = require('./mapHelper');
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(express.json());

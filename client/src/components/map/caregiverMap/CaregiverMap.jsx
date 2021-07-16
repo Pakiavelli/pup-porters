@@ -19,6 +19,8 @@ const useStyles = makeStyles({
     marginBottom: '10%',
   },
   instruction: {
+    display: 'flex',
+    justifyContent: 'center',
     fontSize: 75,
     fontWeight: 300,
   },
